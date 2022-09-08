@@ -1,110 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 * {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
-main{
-    max-width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-   
-}
-
-.left{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    padding-top: 60px;
-    
-}
-.profile-picture{
-    width: 50%;
-}
-.name{
-    margin: 20px;
-    font-size: 50px;
-}
-.job{
-    margin: inherit;
-    color: grey;
-    font-size: 30px;
-
-}
-.div-left{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-}
-.p-left{
-    
-    margin: 10px;
-    
-}
-span{
-    color: blue;
-    font-weight: 600;
+main {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 300px;
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  padding-top: 60px;
+}
+.profile-picture {
+  margin-top: 20px;
+  border-radius: 180px;
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.name {
+  margin: 20px;
+  font-size: 50px;
+}
+.job {
+  margin: inherit;
+  color: grey;
+  font-size: 30px;
+}
+.div-left {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.p-left {
+  margin: 10px;
+}
+span {
+  color: brown;
+  font-weight: 600;
+}
 
+.icons {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 300px;
 }
-.icon{
-    width:50px;
-    margin-right: 10px;
-    margin-top: 20px;
+.icon {
+  width: 50px;
+  margin-right: 10px;
+  margin-top: 20px;
 }
-.right{
-    width:70%;
-    background-color: rgb(249, 242, 234);
+.right {
+  width: 70%;
+  background-color: rgb(249, 242, 234);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-around;
-    margin-top:20px ;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
 nav li {
-    color: black;
-    text-transform: uppercase;
-    font-weight: 800;
-    padding: 10px;
-    border-radius: 10px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 nav a:hover {
-    background-color: #fca311;
+  background-color: #fca311;
 }
-.right-text-p{
-    padding: 40px;
+
+.rightText {
+  margin: 30px;
+  justify-content: center;
+}
+
+.right-text-p {
+  padding: 40px;
 }
 
 @media only screen and (max-width: 600px) {
-   .left, .right{
+  .left,
+  .right {
     width: 100vw;
     padding-top: 20px;
-   }
-   .nav ul{
+  }
+  .nav ul {
     display: flex;
-    flex-wrap:wrap ;
-   }
+    flex-wrap: wrap;
+  }
 }
 
 .clickable {
-    cursor: pointer;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 15px;
+  cursor: pointer;
+
+  border-radius: 10px;
 }
 
 .iconWrp {
-
-    width: 100px;
-
+  width: 100px;
 }
+
+/* ESTILOS DE JAVASCRIPT */
+
+.curso {
+  margin: 20px;
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+
+.grado {
+  margin: 5px;
+  font-style: italic;
+}
+
+.titulo {
+  margin: 5px;
+}
+
+.comienzoFinEduc {
+  margin: 5px;
+}
+
+.lugar {
+  margin: 5px;
+}
+
+.puesto {
+    margin: 20px;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+  }
+
+  .ocupacion {
+    margin: 5px;
+  }
+
+  .comienzoFin {
+    margin: 5px;
+  }
