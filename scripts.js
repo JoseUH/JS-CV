@@ -5,7 +5,11 @@ const clickables$$ = document.querySelectorAll(".clickable");
 let mostrar = "educación";
 
 function cambiar () {
-    mostrar === "educación" ? mostrar = "experiencia" : mostrar = "educación";
+    if (mostrar === "educación") {
+        mostrar = "experiencia"
+    } else {
+        mostrar = "educación";
+    }
     pintar();
 }
 
